@@ -7,8 +7,8 @@ import {
   SiReact, SiMysql, SiPostgresql
 } from 'react-icons/si';
 
-// E pegamos o Java, CSS e um ícone de Banco de Dados (pro SQL Server) daqui:
-import { FaJava, FaCss3Alt, FaDatabase } from 'react-icons/fa';
+// E pegamos o Java, CSS e ícones de contato daqui:
+import { FaJava, FaCss3Alt, FaDatabase, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 // Montando a sua lista de tecnologias com os ícones corrigidos!
 const techLogos = [
@@ -29,11 +29,7 @@ function App() {
             <header className="hero">
         <div className="foto-container">
           {/* Troque a URL abaixo pela sua foto! */}
-          <img 
-            src="/public/portifolio.jpeg" 
-            alt="Foto do Marcio" 
-            className="perfil-foto" 
-          />
+          <img src="./portifolio.jpeg" alt="Foto do Marcio" className="perfil-foto" />
         </div>
         <h1>Olá, sou o Marcio Santos 👋</h1>
         <h2>Desenvolvedor Full Stack</h2>
@@ -114,6 +110,29 @@ function App() {
             </div>
 
           </div>
+        </section>
+
+        {/* Seção de Contato com Links e Ícones */}
+        <section id="contato" className="section">
+          <h2>Contato</h2>
+          <p>Vamos conversar? Me mande uma mensagem:</p>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/marciosantosdev" target="_blank" rel="noreferrer">
+                <FaLinkedin style={{ verticalAlign: 'middle', marginRight: '8px' }} /> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/MarcioSantss" target="_blank" rel="noreferrer">
+                <FaGithub style={{ verticalAlign: 'middle', marginRight: '8px' }} /> GitHub
+              </a>
+            </li>
+            <li>
+              <a href="mailto:marciosantsff@gmail.com?subject=Olá, vamos conversar!">
+                <FaEnvelope style={{ verticalAlign: 'middle', marginRight: '8px' }} /> E-mail
+              </a>
+            </li>
+          </ul>
         </section>
       </main>
 
