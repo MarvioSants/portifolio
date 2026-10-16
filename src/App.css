@@ -1,7 +1,7 @@
 /* --- A CARCAÇA DO CELULAR --- */
 .portfolio-container {
   width: 90%;
-  max-width: 305px; /* Meio-termo ideal: nem largo demais, nem fino demais */
+  max-width: 300px; /* Meio-termo ideal: nem largo demais, nem fino demais */
   height: 670px; /* Altura confortável */
   max-height: 85vh; /* Evita passar da tela no PC */
   
